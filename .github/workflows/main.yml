@@ -1,0 +1,17 @@
+name: astro-site-pipeline
+on:
+  push:
+    branches:["main"]
+  workflow_dispatch:
+jobs:
+  first-job:
+    name: "My first Job"
+    runs-on: macos-latest
+    steps:
+      - name: "My first action"
+        run: echo "Hello World !!!"
+      - name: "My secund action"
+        run: |
+          echo "Do you create first workflow !!!"
+          echo "congratulations."
+      
